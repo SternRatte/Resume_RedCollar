@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+
+.photo-profile{
+    max-width: 330px;
+    max-height: 360px;
+}
+
+.logo{
+    float: right;
+    margin-right: 1%;
+    margin-top: -1%;
+}
+
+.resume{
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.about{
+    max-width: 330px;
+    max-height: 740px;
+    margin-right: 3%;
+}
+
+.container{
+    display: flex;
+    margin: 3% 1%;
+}
+
+.container-descr{
+    display: flex;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top:3%;
+    padding-bottom: 3%;
+}
+
+.container-descr:last-child{
+    border-bottom:none;
+}
+
+.info h1{
+    font-family: 'Redcollar', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -.02em;
+    margin-bottom: 8px;
+}
+
+.info p{
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.02em;
+}
+
+.info{
+    background-color: #F51B1B;
+    color:#FFFFFF;
+    max-width: 290px;
+    height: 45%;
+    padding: 40px 20px;
+    position: relative;
+    top: -110px;
+    border-radius: 20px 20px 0 0;
+}
+
+.union{
+    position: relative;
+    top: -290px;
+    left: 108px;
+    transform: rotate(18deg);
+}
+
+.info:before {
+    content: "";
+    border: 25px solid transparent;
+    position: absolute;
+    bottom: 98%;
+    left: 50%;
+    border-bottom-color: #F51B1B;
+    margin-left: -25px;
+}
+
+.table-descr:before {
+    position: absolute;
+    content: url("../Resume_RedCollar/images/line.svg");
+    background-color: black;
+    top: -2px;
+    padding-top: 1px;
+    left: 50px;
+}
+
+.icon{
+    float:left;
+    margin-right: 5%;
+}
+
+.contacts{
+    margin-bottom: 5%;
+}
+
+.location{
+    margin-bottom: 15%;
+}
+
+.description{
+    color:#FFFFFF;
+    margin-top: 2%;
+    font-family: 'TT Commons', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.01em;
+}
+
+.description-text{
+    max-width: 680px;
+}
+
+.table-descr{
+    position: relative;
+    width:125%;
+    height: 70%;
+    margin-top: 6%;
+    padding: 5%;
+    border: 1px solid #FFFFFF;
+}
+
+.more{
+    word-spacing: 30px;
+}
+
+.descr-text{
+    flex: 70%;
+}
+
+.descr-name{
+    flex: 25%;
+    font-family: 'Redcollar', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.text-name,
+.text-years{
+    opacity: 0.4;
+}
+
+.text-years{
+    margin-bottom: 2%;
+}
+
+@media (max-width: 767px) {
+
+    .resume{
+        max-width: none;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .logo{
+        float: left;
+        margin: 2% 0 15% 3% ;
+    }
+
+    .description-text{
+        width: 90%;
+        margin: 14% auto 5% ;
+    }
+
+    .descr-name{
+        margin: 8% 0;
+    }
+
+    .about{
+        padding-top: 15%;
+        margin: 0 auto;
+    }
+
+    .container-descr{
+        flex-direction: column;
+    }
+
+    .table-descr{
+        max-width: 80%;
+        margin: 0 auto 20%;
+    }
+
+    .table-descr:before{
+        left: 40%;
+    }
+
+}
